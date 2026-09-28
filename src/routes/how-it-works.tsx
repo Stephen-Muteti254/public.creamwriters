@@ -5,9 +5,9 @@ import { Section, SectionHeading, Eyebrow, CTASection } from "@/components/site/
 import { ProcessFlow } from "@/components/site/ProcessFlow";
 import { registerUrl } from "@/config/site";
 
-const title = "How It Works | From Submitted Task to Completed Order — Academic Hub";
+const title = "How It Works | From Submitted Task to Completed Order — Cream Writers";
 const description =
-  "See exactly how Academic Hub handles an assignment: task submitted, expert writer assigned, work delivered, client review, revision loop until satisfied, then the client marks the order complete.";
+  "See exactly how Cream Writers handles an assignment: task submitted, expert writer assigned, work delivered, client review, revision loop until satisfied, then the client marks the order complete.";
 
 export const Route = createFileRoute("/how-it-works")({
   head: () => ({
@@ -17,6 +17,8 @@ export const Route = createFileRoute("/how-it-works")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/how-it-works" },
       { name: "twitter:title", content: title },
@@ -29,7 +31,7 @@ export const Route = createFileRoute("/how-it-works")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "HowTo",
-          name: "How Academic Hub handles an assignment",
+          name: "How Cream Writers handles an assignment",
           description,
           step: [
             {
@@ -41,7 +43,7 @@ export const Route = createFileRoute("/how-it-works")({
             {
               "@type": "HowToStep",
               position: 2,
-              name: "Academic Hub assigns a competent writer",
+              name: "Cream Writers assigns a competent writer",
               text: "The task is matched to a writer verified in that subject, by expertise, experience and track record.",
             },
             {
@@ -107,7 +109,7 @@ function HowItWorks() {
         <div className="absolute inset-0 grid-lines opacity-60" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
           <div className="max-w-3xl space-y-6">
-            <Eyebrow>How it works</Eyebrow>
+            {/*<Eyebrow>How it works</Eyebrow>*/}
             <h1 className="text-4xl font-bold leading-[1.1] lg:text-5xl">
               Every task follows the same{" "}
               <span className="text-primary">visible, accountable path</span>

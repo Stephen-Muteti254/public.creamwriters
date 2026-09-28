@@ -1,15 +1,15 @@
 export const PORTALS = {
-  PUBLIC: "https://academichubpro.com",
-  AUTH: "https://auth.academichubpro.com",
-  WRITER: "https://writer.academichubpro.com",
-  CLIENT: "https://client.academichubpro.com",
-  ADMIN: "https://admin.academichubpro.com",
+  PUBLIC: "https://creamwriters.com",
+  AUTH: "https://auth.creamwriters.com",
+  WRITER: "https://writer.creamwriters.com",
+  CLIENT: "https://client.creamwriters.com",
+  ADMIN: "https://admin.creamwriters.com",
 } as const;
 
 export const SITE = {
-  name: "Academic Hub",
-  domain: "https://academichubpro.com",
-  email: "support@academichubpro.com",
+  name: "Cream Writers",
+  domain: "https://creamwriters.com",
+  email: "support@creamwriters.com",
   address: "575 5th Ave Fl 14, New York City, New York",
 } as const;
 

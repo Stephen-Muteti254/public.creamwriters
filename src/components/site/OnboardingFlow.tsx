@@ -34,7 +34,7 @@ const writerSteps: Step[] = [
   {
     n: "02",
     title: "Experience and skills review",
-    actor: "Academic Hub",
+    actor: "Cream Writers",
     icon: FileSearch,
     body: "We verify credentials, assess your samples and confirm your claimed subject depth against our required standard.",
     detail: ["Credential check", "Sample assessment", "Typically 2–5 business days"],
@@ -42,7 +42,7 @@ const writerSteps: Step[] = [
   {
     n: "03",
     title: "Application approved",
-    actor: "Academic Hub",
+    actor: "Cream Writers",
     icon: BadgeCheck,
     body: "If your experience and skills meet the required standard, you receive an approval notice with your next step.",
     detail: ["Emailed decision", "Reasoned feedback either way"],
@@ -58,7 +58,7 @@ const writerSteps: Step[] = [
   {
     n: "05",
     title: "Account activated",
-    actor: "Academic Hub",
+    actor: "Cream Writers",
     icon: ShieldCheck,
     body: "Your writer workspace is switched on: assignment matching, order threads, payouts and support access.",
     detail: ["Instant on confirmation"],

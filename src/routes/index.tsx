@@ -20,9 +20,9 @@ import { BeforeAfter } from "@/components/site/BeforeAfter";
 import { ProcessFlow } from "@/components/site/ProcessFlow";
 import { SITE, registerUrl } from "@/config/site";
 
-const title = "Academic Hub | Vetted Academic Writing & Research Support Platform";
+const title = "Cream Writers | Vetted Academic Writing & Research Support Platform";
 const description =
-  "Academic Hub matches every assignment with a vetted, subject-matched writer, holds payment until you approve, and keeps revising until you are satisfied. Built for clients and professional writers.";
+  "Cream Writers matches every assignment with a vetted, subject-matched writer, holds payment until you approve, and keeps revising until you are satisfied. Built for clients and professional writers.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,11 +32,13 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "academic hub, academic writing platform, research assistance, hire academic writers, freelance academic writing jobs, editing and proofreading, dissertation support",
+          "cream writers, academic writing platform, research assistance, hire academic writers, freelance academic writing jobs, editing and proofreading, dissertation support",
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:title", content: title },
@@ -84,10 +86,10 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "HowTo",
-          name: "How Academic Hub handles an assignment",
+          name: "How Cream Writers handles an assignment",
           step: [
             { "@type": "HowToStep", name: "Client submits the task" },
-            { "@type": "HowToStep", name: "Academic Hub assigns a competent, subject-matched writer" },
+            { "@type": "HowToStep", name: "Cream Writers assigns a competent, subject-matched writer" },
             { "@type": "HowToStep", name: "Writer handles the task" },
             { "@type": "HowToStep", name: "Writer submits the work" },
             { "@type": "HowToStep", name: "Client reviews the work" },
@@ -167,13 +169,13 @@ function Home() {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <div className="space-y-7">
-              <Eyebrow>Managed academic support</Eyebrow>
+              {/*<Eyebrow>Managed academic support</Eyebrow>*/}
               <h1 className="text-4xl font-bold leading-[1.08] lg:text-6xl">
                 Academic help that is{" "}
                 <span className="text-primary">matched, tracked and accountable</span>
               </h1>
               <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-                Academic Hub replaces informal, high-risk arrangements with a managed platform:
+                Cream Writers replaces informal, high-risk arrangements with a managed platform:
                 every task is assigned to a vetted writer with proven expertise, payment is held
                 until you approve, and revisions continue until you are satisfied.
               </p>
@@ -205,7 +207,7 @@ function Home() {
                 <div className="flex items-center justify-between border-b border-border pb-4">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                      Order #AH-4821
+                      Order #CW-4821
                     </p>
                     <p className="text-base font-semibold">
                       Literature review — Public Health, MSc
@@ -290,7 +292,7 @@ function Home() {
       {/* Pillars */}
       <Section>
         <SectionHeading
-          eyebrow="Why Academic Hub"
+          eyebrow="Why Cream Writers"
           title="Four commitments that hold the whole platform together"
           description="Every feature on the platform exists to make one of these four promises verifiable rather than aspirational."
         />
@@ -334,7 +336,7 @@ function Home() {
         <SectionHeading
           eyebrow="Built for both sides"
           title="One platform, two very different jobs to be done"
-          description="Clients need certainty. Writers need fair, predictable work. Academic Hub is designed so that neither is served at the expense of the other."
+          description="Clients need certainty. Writers need fair, predictable work. Cream Writers is designed so that neither is served at the expense of the other."
         />
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           {audiences.map((a) => (
@@ -374,7 +376,7 @@ function Home() {
             align="left"
             eyebrow="Safeguards"
             title="Credibility is a system, not a slogan"
-            description="Academic Hub is operated as a managed service. Writers are vetted before they touch a task, deliveries are checked before they reach clients, and a support team stands behind every order."
+            description="Cream Writers is operated as a managed service. Writers are vetted before they touch a task, deliveries are checked before they reach clients, and a support team stands behind every order."
           />
           <div className="grid gap-4 sm:grid-cols-2">
             {trust.map((t) => (

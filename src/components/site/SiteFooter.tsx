@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Clock } from "lucide-react";
-import logo from "@/assets/logo/logo-light.svg";
+import logo from "@/assets/logo/creamwriters-wordmark.png";
 import { SITE, loginUrl, registerUrl } from "@/config/site";
 
 export function SiteFooter() {
@@ -9,7 +9,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <img src={logo} alt="Academic Hub" className="h-8 w-auto" width={140} height={35} />
+            <img src={logo} alt="Cream Writers" className="h-8 w-auto" width={140} height={35} />
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               A managed academic support platform that matches every task with a vetted,
               subject-matched writer and keeps clients in control until the work is right.

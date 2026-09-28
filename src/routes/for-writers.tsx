@@ -25,9 +25,9 @@ import { BeforeAfter } from "@/components/site/BeforeAfter";
 import { WriterOnboardingFlow } from "@/components/site/OnboardingFlow";
 import { registerUrl } from "@/config/site";
 
-const title = "For Writers | Fair, Matched Academic Writing Work — Academic Hub";
+const title = "For Writers | Fair, Matched Academic Writing Work — Cream Writers";
 const description =
-  "Write in your own discipline, with payment secured before you start, clear briefs, protected scope and a performance record that raises the work you are offered. Apply to write with Academic Hub.";
+  "Write in your own discipline, with payment secured before you start, clear briefs, protected scope and a performance record that raises the work you are offered. Apply to write with Cream Writers.";
 
 export const Route = createFileRoute("/for-writers")({
   head: () => ({
@@ -37,6 +37,8 @@ export const Route = createFileRoute("/for-writers")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/for-writers" },
       { name: "twitter:title", content: title },
@@ -61,13 +63,13 @@ export const Route = createFileRoute("/for-writers")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "HowTo",
-          name: "How to become a writer on Academic Hub",
+          name: "How to become a writer on Cream Writers",
           step: [
             { "@type": "HowToStep", name: "Apply through the platform" },
-            { "@type": "HowToStep", name: "Academic Hub reviews experience and skills" },
+            { "@type": "HowToStep", name: "Cream Writers reviews experience and skills" },
             { "@type": "HowToStep", name: "Application approved (or rejected with feedback)" },
             { "@type": "HowToStep", name: "Writer pays the refundable activation deposit" },
-            { "@type": "HowToStep", name: "Academic Hub activates the account" },
+            { "@type": "HowToStep", name: "Cream Writers activates the account" },
             { "@type": "HowToStep", name: "Writer completes their expertise profile" },
           ],
         }),
@@ -194,13 +196,13 @@ function ForWriters() {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <div className="space-y-7">
-              <Eyebrow>For Writers</Eyebrow>
+              {/*<Eyebrow>For Writers</Eyebrow>*/}
               <h1 className="text-4xl font-bold leading-[1.1] lg:text-5xl">
                 Write in your field.{" "}
                 <span className="text-primary">Get paid on terms you can plan around.</span>
               </h1>
               <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-                No bidding wars, no unpaid sample tests, no vanished clients. Academic Hub matches
+                No bidding wars, no unpaid sample tests, no vanished clients. Cream Writers matches
                 you with work in your own discipline, secures the payment before you start, and
                 turns every completed order into a record that raises what you are offered next.
               </p>
@@ -254,7 +256,7 @@ function ForWriters() {
         <SectionHeading
           eyebrow="The difference"
           title="What freelance academic work looked like before — and what it looks like here"
-          description="Every one of these was a reason good writers left the field. Fixing them is the reason Academic Hub is a managed platform rather than a listings board."
+          description="Every one of these was a reason good writers left the field. Fixing them is the reason Cream Writers is a managed platform rather than a listings board."
         />
         <div className="mt-14">
           <BeforeAfter audience="writers" />
@@ -285,7 +287,7 @@ function ForWriters() {
       <Section tone="surface" id="become-a-writer">
         <SectionHeading
           eyebrow="Becoming a writer"
-          title="How to join Academic Hub as a writer"
+          title="How to join Cream Writers as a writer"
           description="Onboarding is a defined sequence with a named owner at every stage — you always know who holds the next action and what the decision was."
         />
         <div className="mt-14">

@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const title = "Privacy Policy | Academic Hub";
+const title = "Privacy Policy | Cream Writers";
 const description =
-  "How Academic Hub collects, uses, stores and protects the personal information of clients and writers on our academic support platform.";
+  "How Cream Writers collects, uses, stores and protects the personal information of clients and writers on our academic support platform.";
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({
@@ -12,6 +12,8 @@ export const Route = createFileRoute("/privacy")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/privacy" },
       { name: "twitter:title", content: title },
@@ -81,7 +83,7 @@ const sections = [
   },
   {
     h: "8. Contact us",
-    p: "Questions about this policy can be sent to support@academichubpro.com, or by post to 575 5th Ave Fl 14, New York City, New York.",
+    p: "Questions about this policy can be sent to support@creamwriters.com, or by post to 575 5th Ave Fl 14, New York City, New York.",
   },
 ];
 

@@ -3,7 +3,7 @@
 @import "tw-animate-css";
 
 /*
- * Academic Hub public site design system.
+ * Cream Writers public site design system.
  * Light theme only — no dark mode. All colors in oklch.
  */
 
@@ -72,18 +72,18 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.24 0.045 259);
 
-  /* Brand: Academic Hub blue + deep navy */
-  --primary: oklch(0.55 0.17 255);
+  /* Brand: Cream Writers blue + deep navy */
+  --primary: oklch(0.31 0.105 252);
   --primary-foreground: oklch(0.99 0.003 250);
-  --primary-deep: oklch(0.29 0.08 260);
+  --primary-deep: oklch(0.22 0.075 252);
 
-  --secondary: oklch(0.96 0.017 253);
-  --secondary-foreground: oklch(0.29 0.08 260);
+  --secondary: oklch(0.84 0.12 78);
+  --secondary-foreground: oklch(0.22 0.075 252);
 
   --muted: oklch(0.968 0.008 250);
   --muted-foreground: oklch(0.53 0.03 256);
 
-  --accent: oklch(0.955 0.028 250);
+  --accent: oklch(0.95 0.035 82);
   --accent-foreground: oklch(0.29 0.08 260);
 
   --destructive: oklch(0.58 0.21 27);
@@ -100,7 +100,7 @@
 
   --border: oklch(0.918 0.012 253);
   --input: oklch(0.918 0.012 253);
-  --ring: oklch(0.55 0.17 255);
+  --ring: oklch(0.66 0.14 75);
 
   --chart-1: oklch(0.55 0.17 255);
   --chart-2: oklch(0.63 0.15 154);
@@ -118,12 +118,6 @@
   --sidebar-ring: oklch(0.55 0.17 255);
 
   /* Gradients */
-  --gradient-hero: linear-gradient(
-    160deg,
-    color-mix(in oklab, var(--primary) 8%, white) 0%,
-    white 45%,
-    color-mix(in oklab, var(--primary) 5%, white) 100%
-  );
   --gradient-primary: linear-gradient(135deg, var(--primary-deep), var(--primary));
   --gradient-soft: linear-gradient(
     135deg,
@@ -165,7 +159,7 @@
 }
 
 @utility bg-hero {
-  background-image: var(--gradient-hero);
+  background-color: var(--background);
 }
 
 @utility bg-brand {

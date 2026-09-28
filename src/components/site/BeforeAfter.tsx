@@ -143,7 +143,7 @@ function Column({
         </span>
         <div>
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-            {isBefore ? "Before Academic Hub" : "With Academic Hub"}
+            {isBefore ? "Before Cream Writers" : "With Cream Writers"}
           </p>
           <p className="text-lg font-semibold">
             {isBefore ? "Informal, risky, unaccountable" : "Structured, verified, accountable"}

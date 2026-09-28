@@ -27,9 +27,9 @@ import { BeforeAfter } from "@/components/site/BeforeAfter";
 import { ProcessFlow } from "@/components/site/ProcessFlow";
 import { registerUrl } from "@/config/site";
 
-const title = "For Clients | Hire Vetted Academic Writers — Academic Hub";
+const title = "For Clients | Hire Vetted Academic Writers — Cream Writers";
 const description =
-  "Submit your assignment and Academic Hub assigns a vetted, subject-matched writer. Payment is held until you approve, revisions run until you are satisfied, and every instruction is on the record.";
+  "Submit your assignment and Cream Writers assigns a vetted, subject-matched writer. Payment is held until you approve, revisions run until you are satisfied, and every instruction is on the record.";
 
 export const Route = createFileRoute("/for-clients")({
   head: () => ({
@@ -39,6 +39,8 @@ export const Route = createFileRoute("/for-clients")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/for-clients" },
       { name: "twitter:title", content: title },
@@ -154,13 +156,13 @@ function ForClients() {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <div className="space-y-7">
-              <Eyebrow>For Clients</Eyebrow>
+              {/*<Eyebrow>For Clients</Eyebrow>*/}
               <h1 className="text-4xl font-bold leading-[1.1] lg:text-5xl">
                 Submit the task. We take responsibility for{" "}
                 <span className="text-primary">who does it and how it ends</span>.
               </h1>
               <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-                You should not have to gamble on whoever answers first. Academic Hub assigns your
+                You should not have to gamble on whoever answers first. Cream Writers assigns your
                 assignment to a vetted writer in the right field, holds your payment until you
                 approve, and keeps revising until the work is right.
               </p>
@@ -209,7 +211,7 @@ function ForClients() {
         <SectionHeading
           eyebrow="The difference"
           title="What changes the moment you stop working informally"
-          description="These are the five failure points clients described before Academic Hub existed — and what the platform does about each of them."
+          description="These are the five failure points clients described before Cream Writers existed — and what the platform does about each of them."
         />
         <div className="mt-14">
           <BeforeAfter audience="clients" />

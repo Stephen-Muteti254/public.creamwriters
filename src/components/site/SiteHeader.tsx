@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo/logo-light.svg";
+import logo from "@/assets/logo/creamwriters-wordmark.png";
 import { loginUrl, registerUrl } from "@/config/site";
 
 const navigation = [
@@ -20,8 +20,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center" aria-label="Academic Hub home">
-          <img src={logo} alt="Academic Hub" className="h-9 w-auto" width={158} height={40} />
+        <Link to="/" className="flex items-center" aria-label="Cream Writers home">
+          <img src={logo} alt="Cream Writers" className="h-10 w-auto" width={174} height={48} />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">

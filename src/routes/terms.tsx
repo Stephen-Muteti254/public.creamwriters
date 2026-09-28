@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const title = "Terms & Conditions | Academic Hub";
+const title = "Terms & Conditions | Cream Writers";
 const description =
-  "The terms governing use of the Academic Hub platform by clients and writers, including order handling, revisions, payments and acceptable use.";
+  "The terms governing use of the Cream Writers platform by clients and writers, including order handling, revisions, payments and acceptable use.";
 
 export const Route = createFileRoute("/terms")({
   head: () => ({
@@ -12,6 +12,8 @@ export const Route = createFileRoute("/terms")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/terms" },
       { name: "twitter:title", content: title },
@@ -25,7 +27,7 @@ export const Route = createFileRoute("/terms")({
 const sections = [
   {
     h: "1. Acceptance of terms",
-    p: "By creating an account or using the Academic Hub platform, you agree to these terms. If you do not agree, do not use the platform.",
+    p: "By creating an account or using the Cream Writers platform, you agree to these terms. If you do not agree, do not use the platform.",
   },
   {
     h: "2. Accounts",
@@ -33,7 +35,7 @@ const sections = [
   },
   {
     h: "3. Orders and assignment",
-    p: "Clients submit tasks with a defined brief. Academic Hub assigns a writer based on verified expertise, experience and performance record. The brief as submitted defines the scope of the assignment.",
+    p: "Clients submit tasks with a defined brief. Cream Writers assigns a writer based on verified expertise, experience and performance record. The brief as submitted defines the scope of the assignment.",
   },
   {
     h: "4. Revisions",
@@ -61,7 +63,7 @@ const sections = [
   },
   {
     h: "10. Limitation of liability",
-    p: "The platform is provided on an as-is basis. To the maximum extent permitted by law, Academic Hub's liability arising from an order is limited to the amount paid for that order.",
+    p: "The platform is provided on an as-is basis. To the maximum extent permitted by law, Cream Writers’ liability arising from an order is limited to the amount paid for that order.",
   },
   {
     h: "11. Termination",
@@ -69,7 +71,7 @@ const sections = [
   },
   {
     h: "12. Changes and contact",
-    p: "We may update these terms from time to time; continued use constitutes acceptance. Questions can be sent to support@academichubpro.com.",
+    p: "We may update these terms from time to time; continued use constitutes acceptance. Questions can be sent to support@creamwriters.com.",
   },
 ];
 

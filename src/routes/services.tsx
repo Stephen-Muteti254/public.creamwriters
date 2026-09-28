@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Section, SectionHeading, Eyebrow, CTASection } from "@/components/site/Primitives";
 import { SITE, registerUrl } from "@/config/site";
 
-const title = "Services | Academic Writing, Research, Editing & Tutoring — Academic Hub";
+const title = "Services | Academic Writing, Research, Editing & Tutoring — Cream Writers";
 const description =
   "Essays and coursework, research papers, dissertations, literature reviews, data analysis, editing and proofreading, formatting and tutoring — each delivered by a vetted, subject-matched writer.";
 
@@ -117,6 +117,8 @@ export const Route = createFileRoute("/services")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/services" },
       { name: "twitter:title", content: title },
@@ -129,7 +131,7 @@ export const Route = createFileRoute("/services")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Academic Hub services",
+          name: "Cream Writers services",
           itemListElement: services.map((s, i) => ({
             "@type": "ListItem",
             position: i + 1,
@@ -154,7 +156,7 @@ function Services() {
         <div className="absolute inset-0 grid-lines opacity-60" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
           <div className="max-w-3xl space-y-6">
-            <Eyebrow>Services</Eyebrow>
+            {/*<Eyebrow>Services</Eyebrow>*/}
             <h1 className="text-4xl font-bold leading-[1.1] lg:text-5xl">
               Specialist academic support,{" "}
               <span className="text-primary">matched to the exact task</span>

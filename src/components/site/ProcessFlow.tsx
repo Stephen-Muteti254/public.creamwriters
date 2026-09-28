@@ -21,7 +21,7 @@ const steps = [
     n: "02",
     title: "We assign a competent writer",
     icon: UserCheck,
-    actor: "Academic Hub",
+    actor: "Cream Writers",
     body: "Matched by verified subject expertise, experience level, past ratings and on-time record — never by who bids first.",
   },
   {

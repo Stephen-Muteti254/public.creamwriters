@@ -81,11 +81,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Academic Hub | Trusted Academic Writing & Research Support" },
+      { title: "Cream Writers | Trusted Academic Writing & Research Support" },
       {
         name: "description",
         content:
-          "Academic Hub is a managed academic support platform connecting clients with vetted, subject-matched writers.",
+          "Cream Writers is a managed academic support platform connecting clients with vetted, subject-matched writers.",
       },
       { name: "author", content: SITE.name },
       { name: "robots", content: "index, follow" },
@@ -97,7 +97,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/favicon/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,

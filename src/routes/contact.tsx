@@ -9,9 +9,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Section, Eyebrow } from "@/components/site/Primitives";
 import { SITE } from "@/config/site";
 
-const title = "Contact Academic Hub | Talk to Our Support Team";
+const title = "Contact Cream Writers | Talk to Our Support Team";
 const description =
-  "Questions about an order, matching, pricing or writing with us? Contact the Academic Hub team by email or through the form — support is available 24/7.";
+  "Questions about an order, matching, pricing or writing with us? Contact the Cream Writers team by email or through the form — support is available 24/7.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -21,6 +21,8 @@ export const Route = createFileRoute("/contact")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: "https://creamwriters.com/social/og-image.png" },
+      { name: "twitter:image", content: "https://creamwriters.com/social/og-image.png" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/contact" },
       { name: "twitter:title", content: title },
@@ -64,7 +66,7 @@ function Contact() {
       <section className="bg-hero">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="max-w-3xl space-y-5">
-            <Eyebrow>Contact</Eyebrow>
+            {/*<Eyebrow>Contact</Eyebrow>*/}
             <h1 className="text-4xl font-bold leading-tight lg:text-5xl">
               Talk to a person before you commit
             </h1>
